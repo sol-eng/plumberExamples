@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+# Count number of examples
+n_examples <- length(dir("inst/plumber"))
+```
+
+# plumberExamples
+
+This package provides a collection of example APIs built in R using the [Plumber](https://rplumber.io) package.
+
+These examples are meant to highlight common patterns and best practices. They can be used as compelling starting points when getting started with Plumber.
+
+## Installation
+
+You can install the development version of plumberExamples from GitHub with:
+
+```{r, eval=FALSE}
+remotes::install_github("sol-eng/plumberExamples")
+```
+
+## Usage
+
+There are two main uses cases for this package: running example APIs and examining their source code.
+
+Example APIs can be run using the `plumb_api()` function:
+```{r, eval = FALSE}
+library(plumber)
+plumb_api(package = "plumberExamples", name = "00-hello") %>%
+  pr_run()
+```
+
+To view the source code associated with the API, add `edit = TRUE` to the function call:
+```{r, eval = FALSE}
+plumb_api(package = "plumberExamples", name = "00-hello", edit = TRUE)
+```
+
+## Examples
+There are currently `r n_examples` examples in this package. Each example is located in [`/inst/plumber`](inst/plumber) and can be accessed using the previously described `plumb_api()` function:
+
+```{r, echo = FALSE, results='asis'}
+knitr::kable(data.frame(
+  Example = list.dirs("inst/plumber", full.names = FALSE, recursive = FALSE),
+  Path = paste0("[", 
+                list.dirs("inst/plumber", full.names = TRUE, recursive = FALSE),
+                "](",
+                list.dirs("inst/plumber", full.names = TRUE, recursive = FALSE),
+                ")"
+  )
+))
+```
+
