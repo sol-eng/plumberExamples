@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# OpenAPI Spec
+
+This API demonstrates how to manipulate the OpenAPI spec file used to generated
+the Plumber UI.
+
+## Endpoints
+
+-   `/sum`: Return the sum of the provided array of values
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r openapi-spec}
+```

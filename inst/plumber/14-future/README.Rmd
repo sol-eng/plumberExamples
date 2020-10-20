@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Future
+
+Example for using the [future](https://github.com/HenrikBengtsson/future)
+package for asynchronous execution with Plumber
+
+## Endpoints
+
+-   `/sync`: Print route, time, and worker PID
+-   `/future`: Sleep for 10 seconds, then print route, time, and worker PID
+-   `/divide`: Divide a by b in a future process
+-   `/divide-catch`: Divide a by b in a future process and handle errors
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r future}
+```

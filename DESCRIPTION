@@ -1,0 +1,16 @@
+Package: plumberExamples
+Type: Package
+Title: Examples of Plumber APIs
+Version: 0.0.0.9999
+Authors@R:
+    person("James", "Blair", email = "james@rstudio.com", role = c("aut", "cre"))
+Description: A collection of example Plumber APIs used to illustrate common 
+    patterns and best practices.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    plumber (>= 1.0.0.9999)
+RoxygenNote: 7.1.1
+Remotes:  
+    rstudio/plumber

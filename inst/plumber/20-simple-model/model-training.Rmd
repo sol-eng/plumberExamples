@@ -1,0 +1,16 @@
+---
+title: "Cars Model Training"
+output: html_notebook
+---
+
+Build simple model from mtcars dataset.
+
+```{r}
+# Model ---- (insert fancy model here)
+cars_model <- lm(mpg ~ cyl + hp,
+                 data = mtcars)
+
+# Save model ----
+saveRDS(cars_model,"cars-model.rds")
+```
+

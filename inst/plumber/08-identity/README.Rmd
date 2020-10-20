@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Identity
+
+A simple API that returns information about the system it's running on.
+
+## Endpoints
+
+-   `/name`: The `nodename` of the server receiving the request
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r identity}
+```

@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Attachment
+
+This API demonstrates how to make responses availalbe as attachments.
+
+## Endpoints
+
+-   `/name`: Download an attachment as a named text file
+-   `/no-name`: Download an attachment as the name of the route
+-   `/inline`: No attachment - display the result in browser
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r attachment}
+```

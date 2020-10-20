@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+knitr::read_chunk("tidy-plumber.R")
+```
+
+# Plumber filters
+
+This examples show how Plumber filters work by implementing a rudimentary
+authentication mechanism.
+
+## Endpoints
+
+* `/me`: Returns the identity of the user, as defined in the `username` query
+string parameter. Users are "authenticated" against a set list.
+* `/about`: This endpoint preempts the authentication endpoint and is therefore
+available to all users, whether they are valid or not.
+
+## Definition
+### [plumber.R](plumber.R)
+```{r filter}
+```
+
+### [Tidy plumber](tidy-plumber.R)
+```{r tidy-plumber}
+```

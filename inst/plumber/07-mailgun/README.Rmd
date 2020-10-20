@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Mailgun
+
+Example of manipulating global state. Each request to `/mail` adds an entry to
+the `emails` dataframe. `/tail` can be used to see the most recent 5 emails.
+
+## Endpoints
+
+-   `/mail`: Submit an email with `from` and `subject` parameters
+-   `/tail`: Return the last 5 recorded emails
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r mailgun}
+```

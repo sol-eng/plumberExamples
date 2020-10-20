@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Arguments
+
+This example highlights challenges that can occur when you depend solely on Plumber to automatically parse request arguments. Since arguments can be presented in a variety of different ways as part of a request, it is best practice to manually parse the arguments in the manner you expect to receive them.
+
+## Endpoints
+
+-   `/bad-practice/<a>/<b>`: List back the parsed arguments
+-   `/good-practice/<a>/<b>`: List various arguments as represented by the `req` object`
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r arguments}
+```

@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Car Inventory
+A collection of endpoints that all relate to an inventory of cars. This example
+illustrates typical CRUD API design with each endpoint related to a specific
+action performed against the car inventory list.
+
+
+## Endpoints
+
+-   GET `/car`: List all cars
+-   GET `/car/id`: Lookup a car by id
+-   POST `/car`: Add a car to the inventory
+-   PUT `/car`: Update a car in the inventory
+-   DELETE `/car/id`: Delete a car from the inventory
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r car-inventory}
+```

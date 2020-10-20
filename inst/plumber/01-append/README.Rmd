@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+knitr::read_chunk("tidy-plumber.R")
+```
+
+# Appender
+
+This API highlights how to use the global environment to keep track of API
+state. The [managing state](https://www.rplumber.io/articles/execution-model.html#managing-state-1) section of
+the Plumber documentation contains further details.
+
+## Endpoints
+
+* `/append`: Append a value to a global set of values
+* `/tail`: Return the last n values of the global value store
+* `/graph`: Return a plot of the values contained in the global value store
+
+## Definition
+### [plumber.R](plumber.R)
+```{r append}
+```
+
+### [Tidy Plumber](tidy-plumber.R)
+```{r tidy-plumber}
+```
+
+

@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Sessions
+
+This API demonstrates how values can be stored across essions.
+
+## Endpoints
+
+-   `/counter`: Return visit count stored via cookies
+-   `/sessionCounter`: Return visit count stored within session object
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r session}
+```

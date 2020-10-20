@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Content Type
+
+Examples for serializing responses to different content types
+
+## Endpoints
+
+-   `/pdf`: Return a PDF
+-   `/text`: Return plain text
+-   `/html`: Return simple HTML content
+-   `/download-binary`: Return a binary file
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r content-type}
+```

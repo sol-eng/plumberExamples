@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Plumber Logging
+
+This is a simplified version of the example in
+[sol-eng/plumber-logging](https://github.com/sol-eng/plumber-logging).
+This example highlights how Plumber APIs can be built with additional
+logging in order to capture information about incoming requests.
+
+## Endpoints
+
+  - `/echo`: Echo back the input
+  - `/plot`: Return a histogram of 100 random normal values
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r logging}
+```

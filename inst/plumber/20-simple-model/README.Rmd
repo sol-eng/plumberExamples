@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Simple ML Model
+
+This example is a simplified example of the version in
+[sol-eng/plumber-model](https://github.com/sol-eng/plumber-model), which
+demonstrates how to build a Plumber endpoint for a machine learning model.
+
+## Endpoints
+
+* `/health-check`: Verify API is up and running
+* `/predict`: Generate predictions based on a provided set of input values
+
+## Definition
+### [plumber.R](plumber.R)
+```{r simple-model}
+```

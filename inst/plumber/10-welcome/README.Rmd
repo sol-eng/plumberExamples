@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Welcome
+
+A simple API with a single endpoint that returns HTML indicating Plumber is
+running.
+
+## Endpoints
+
+-   `/`: HTML indicating plumber is alive
+
+## Definition
+
+### [plumber.R](plumber.R)
+
+```{r welcome}
+```

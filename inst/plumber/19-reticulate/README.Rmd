@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# Reticulated Plumber
+
+The `reticulate` package enables enables interoperability between Python and R.
+This example sources a [python script](add.py) and makes the Python function
+available in a Plumber API endpoint.
+
+## Endpoints
+
+* `/sum`: Return the sum of 2 values
+
+## Definition
+### [plumber.R](plumber.R)
+```{r reticulate}
+```

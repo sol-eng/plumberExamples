@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("myplumberapi.R")
+knitr::read_chunk("entrypoint.R")
+knitr::read_chunk("tidy-plumber.R")
+```
+
+# Entrypoint
+
+**Note: As of verison 1.0.0, `entrypoint.R` is deprecated in favor of using `#* @plumber` tags in a standard Plumber definition file.**
+
+`entrypoint.R` can be used to further modify an existing Plumber API router.
+
+## Endpoints
+
+-   `/counter`: Return visit count
+
+## Definition
+
+### [myplumberapi.R](myplumberapi.R)
+
+```{r plumber}
+```
+
+### [entrypoint.R](entrypoint.R)
+
+```{r entrypoint}
+```
+
+
+### [Tidy Plumber](tidy-plumber.R)
+
+```{r tidy-plumber}
+```

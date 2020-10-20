@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+
+knitr::read_chunk("plumber.R")
+```
+
+# GitHub
+
+This example highlights how a Plumber API can be used in connection with a
+GitHub webhook to automatically update the Plumber package anytime an update a
+pushed to the GitHub repository.
+
+Note this requires a valid GitHub key stored as `github-key.txt` in order to
+properly work.
+
+## Endpoints
+
+* `/version`: Return information about the currently installed version of Plumber
+* `/update`: Checks to ensure the incoming request is an authenticated GitHub request, then updates the system installed version of Plumber.
+
+## Definition
+### [plumber.R](plumber.R)
+```{r github}
+```
