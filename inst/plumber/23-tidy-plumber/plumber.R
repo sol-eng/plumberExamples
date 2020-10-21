@@ -4,7 +4,7 @@ library(plumber)
 
 #* @plumber
 function(pr) {
-  pr() %>%
+  pr %>%
     pr_get(path = "/echo",
            handler = function(msg = "") {
              list(msg = paste0("The message is: '", msg, "'"))
@@ -18,6 +18,5 @@ function(pr) {
     pr_post(path = "/sum",
             handler = function(a, b) {
               as.numeric(a) + as.numeric(b)
-            }) %>%
-    pr_run()
+            })
 }
