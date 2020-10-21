@@ -12,7 +12,6 @@ knitr::opts_chunk$set(
 )
 
 knitr::read_chunk("plumber.R")
-knitr::read_chunk("tidy-plumber.R")
 ```
 
 # Hello World, Plumber
@@ -30,10 +29,4 @@ This is the default starter example for Plumber APIs.
 ### [plumber.R](plumber.R)
 
 ```{r hello-world}
-```
-
-### [Tidy Plumber](tidy-plumber.R)
-
-Starting with Plumber 1.0.0, Plumber supports a "tidy" interface for defining APIs. This same API described above can also be defined with the following:
-```{r tidy-plumber}
 ```

@@ -14,16 +14,19 @@ knitr::opts_chunk$set(
 knitr::read_chunk("plumber.R")
 ```
 
-# Mean and Sum
+# Tidy Plumber
 
-Simple examples showing two numeric API endpoints.
+Version 1.0.0 of Plumber introduced a "tidy interface" for Plumber APIs that dramatically simplifies programmatically building APIs.
 
 ## Endpoints
 
-* `/mean`: Return the mean of `n` random samples from a normal distribution
-* `/sum`: Return the sum of two values.
+-   `/echo`: Echo back the input
+-   `/plot`: Return a histogram of 100 random normal values
+-   `/sum`: Return the sum of 2 values
 
 ## Definition
+
 ### [plumber.R](plumber.R)
-```{r mean-and-sum}
+
+```{r tidy-plumber}
 ```

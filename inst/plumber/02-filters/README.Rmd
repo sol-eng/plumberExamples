@@ -12,7 +12,6 @@ knitr::opts_chunk$set(
 )
 
 knitr::read_chunk("plumber.R")
-knitr::read_chunk("tidy-plumber.R")
 ```
 
 # Plumber filters
@@ -30,8 +29,4 @@ available to all users, whether they are valid or not.
 ## Definition
 ### [plumber.R](plumber.R)
 ```{r filter}
-```
-
-### [Tidy plumber](tidy-plumber.R)
-```{r tidy-plumber}
 ```

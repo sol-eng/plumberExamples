@@ -12,7 +12,6 @@ knitr::opts_chunk$set(
 )
 
 knitr::read_chunk("plumber.R")
-knitr::read_chunk("tidy-plumber.R")
 ```
 
 # Appender
@@ -31,9 +30,3 @@ the Plumber documentation contains further details.
 ### [plumber.R](plumber.R)
 ```{r append}
 ```
-
-### [Tidy Plumber](tidy-plumber.R)
-```{r tidy-plumber}
-```
-
-
